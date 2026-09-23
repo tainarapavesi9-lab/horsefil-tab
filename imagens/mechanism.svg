@@ -1,0 +1,61 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#faf7f2"/>
+
+  <!-- Panel divider -->
+  <line x1="600" y1="60" x2="600" y2="700" stroke="#d8d2c6" stroke-width="2" stroke-dasharray="10,10"/>
+
+  <!-- Left panel: constricted vessel -->
+  <text x="300" y="90" font-family="Georgia, serif" font-size="30" font-weight="700" text-anchor="middle" fill="#3a3a3a">Vessel walls tense</text>
+
+  <path d="M 90 400 C 90 300, 200 260, 300 260 C 400 260, 510 300, 510 400 C 510 500, 400 540, 300 540 C 200 540, 90 500, 90 400 Z"
+        fill="none" stroke="#a63d2f" stroke-width="26"/>
+  <ellipse cx="300" cy="400" rx="60" ry="80" fill="#7a1f16"/>
+
+  <text x="300" y="420" font-family="-apple-system,Segoe UI,Arial,sans-serif" font-size="20" fill="#fdeee9" text-anchor="middle">narrow</text>
+  <text x="300" y="446" font-family="-apple-system,Segoe UI,Arial,sans-serif" font-size="20" fill="#fdeee9" text-anchor="middle">pathway</text>
+
+  <text x="300" y="600" font-family="-apple-system,Segoe UI,Arial,sans-serif" font-size="19" text-anchor="middle" fill="#5f6368">Blood moves slower.</text>
+  <text x="300" y="628" font-family="-apple-system,Segoe UI,Arial,sans-serif" font-size="19" text-anchor="middle" fill="#5f6368">Less oxygen gets through.</text>
+
+  <!-- Right panel: relaxed / dilated vessel -->
+  <text x="900" y="90" font-family="Georgia, serif" font-size="30" font-weight="700" text-anchor="middle" fill="#3a3a3a">Vessel walls relaxed</text>
+
+  <path d="M 690 400 C 690 280, 800 230, 900 230 C 1000 230, 1110 280, 1110 400 C 1110 520, 1000 570, 900 570 C 800 570, 690 520, 690 400 Z"
+        fill="none" stroke="#3f7d4c" stroke-width="18"/>
+  <ellipse cx="900" cy="400" rx="115" ry="150" fill="#dff2e3"/>
+
+  <!-- flowing blood cells -->
+  <circle cx="860" cy="360" r="14" fill="#c0453a"/>
+  <circle cx="905" cy="345" r="14" fill="#c0453a"/>
+  <circle cx="945" cy="380" r="14" fill="#c0453a"/>
+  <circle cx="865" cy="415" r="14" fill="#c0453a"/>
+  <circle cx="915" cy="440" r="14" fill="#c0453a"/>
+  <circle cx="945" cy="410" r="14" fill="#c0453a"/>
+  <circle cx="880" cy="470" r="14" fill="#c0453a"/>
+  <circle cx="930" cy="470" r="14" fill="#c0453a"/>
+
+  <!-- NO molecules with small labels -->
+  <g font-family="-apple-system,Segoe UI,Arial,sans-serif" font-size="15" fill="#2f6b3a">
+    <circle cx="770" cy="270" r="9" fill="#8fd39e"/>
+    <text x="785" y="275">NO</text>
+    <circle cx="1030" cy="280" r="9" fill="#8fd39e"/>
+    <text x="1045" y="285">NO</text>
+    <circle cx="740" cy="470" r="9" fill="#8fd39e"/>
+    <text x="755" y="475">NO</text>
+    <circle cx="1050" cy="500" r="9" fill="#8fd39e"/>
+    <text x="1065" y="505">NO</text>
+  </g>
+
+  <text x="900" y="600" font-family="-apple-system,Segoe UI,Arial,sans-serif" font-size="19" text-anchor="middle" fill="#5f6368">Nitric oxide signals the wall</text>
+  <text x="900" y="628" font-family="-apple-system,Segoe UI,Arial,sans-serif" font-size="19" text-anchor="middle" fill="#5f6368">to relax. Blood flows freely.</text>
+
+  <!-- Arrow between panels -->
+  <path d="M 545 400 L 655 400" stroke="#9b2c20" stroke-width="4" marker-end="url(#arrow)"/>
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="8" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#9b2c20"/>
+    </marker>
+  </defs>
+
+  <text x="1100" y="760" font-family="-apple-system,Segoe UI,Arial,sans-serif" font-size="14" fill="#9a9a9a" text-anchor="end">Simplified illustration, not to medical scale.</text>
+</svg>
