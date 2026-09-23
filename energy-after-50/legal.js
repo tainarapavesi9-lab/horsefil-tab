@@ -1,6 +1,6 @@
 (function () {
-  var mail = 'the contact details on this page';
-  var contactBlock = "<p>Oakwell Men's Journal</p>";
+  var mail = 'contact@customercs.com';
+  var contactBlock = "<p>Email: <a href=\"mailto:contact@customercs.com\">contact@customercs.com</a></p>";
 
   var css = [
     "dialog.legal{width:min(680px,calc(100% - 32px));max-height:85vh;overflow-y:auto;border:none;border-radius:12px;padding:0;box-shadow:0 20px 60px rgba(0,0,0,.35);font:16px/1.6 -apple-system,Segoe UI,Arial,sans-serif;color:#1c1c1c}",
