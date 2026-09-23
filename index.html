@@ -75,6 +75,7 @@
   .ingredients{display:grid;gap:12px;margin:20px 0}
   .ing{border:1px solid var(--line);border-radius:10px;padding:14px 16px;font:17px/1.55 -apple-system,Segoe UI,Arial,sans-serif}
   .ing b{display:block;font-size:18px;margin-bottom:3px}
+  .avatar{display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:50%;background:var(--accent);color:#fff;font:700 13px/1 -apple-system,Segoe UI,Arial,sans-serif;float:left;margin-right:10px}
   .ing .tag{display:inline-block;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:var(--accent);background:var(--soft);border-radius:20px;padding:2px 10px;margin-bottom:6px}
   .ing a{font-size:14px}
   .facts{border:2px solid var(--ink);border-radius:10px;padding:16px 18px;margin:24px 0;font:17px/1.55 -apple-system,Segoe UI,Arial,sans-serif}
@@ -97,6 +98,7 @@
   .pack-tag{display:inline-block;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:#fff;background:#6c757d;border-radius:20px;padding:3px 12px}
   .pack-best .pack-tag{background:var(--accent)}
   .pack-badge{position:absolute;top:-14px;left:50%;transform:translateX(-50%);background:#c9972e;color:#fff;font:800 12px/1 -apple-system,Segoe UI,Arial,sans-serif;text-transform:uppercase;letter-spacing:.04em;padding:6px 14px;border-radius:20px;box-shadow:0 2px 6px rgba(0,0,0,.2);white-space:nowrap}
+  .pack-img{display:block;margin:8px auto 4px;width:110px;height:110px;object-fit:contain}
   .pack-name{font:700 22px/1.2 Georgia,serif;margin-top:8px}
   .pack-days{font-size:15px;color:var(--muted)}
   .pack-price{font-size:17px;margin-top:10px}
@@ -333,9 +335,9 @@
   <p>I looked up other reviews before I fully believed it wasn't just me. A few, from HorseFil's own customer page:</p>
 
   <div class="ingredients">
-    <div class="ing"><b>Michael Thompson &mdash; Houston, Texas</b>"If it wasn't for HorseFil, I'd still be feeling stuck, overwhelmed, and wondering if I'd ever regain my confidence and vitality... Thanks to HorseFil, I've reclaimed my sense of purpose and strength, and my relationships have never been better."</div>
-    <div class="ing"><b>James Miller &mdash; Denver, Colorado</b>"I was skeptical at first, but HorseFil completely turned my life around... Now, I wake up each day with focus and confidence, ready to take on anything."</div>
-    <div class="ing"><b>Robert Anderson &mdash; San Diego, California</b>"Before HorseFil, I felt like I'd lost my edge... within weeks, everything started to shift. I'm more energized, focused, and driven than I've been in years."</div>
+    <div class="ing"><span class="avatar">MT</span><b>Michael Thompson &mdash; Houston, Texas</b>"If it wasn't for HorseFil, I'd still be feeling stuck, overwhelmed, and wondering if I'd ever regain my confidence and vitality... Thanks to HorseFil, I've reclaimed my sense of purpose and strength, and my relationships have never been better."</div>
+    <div class="ing"><span class="avatar">JM</span><b>James Miller &mdash; Denver, Colorado</b>"I was skeptical at first, but HorseFil completely turned my life around... Now, I wake up each day with focus and confidence, ready to take on anything."</div>
+    <div class="ing"><span class="avatar">RA</span><b>Robert Anderson &mdash; San Diego, California</b>"Before HorseFil, I felt like I'd lost my edge... within weeks, everything started to shift. I'm more energized, focused, and driven than I've been in years."</div>
   </div>
   <p class="cta-note">Verified purchase reviews as published by the manufacturer on the official HorseFil website.</p>
 
@@ -367,13 +369,10 @@
 
   <p>The night I ordered, Karen was already asleep and I was on the couch again. I figured if it didn't work, I'd get my money back. Here's what you'll see on the official website, so there are no surprises:</p>
 
-  <figure class="product">
-    <img src="imagens/product-6bottles.png" alt="Six bottles of HorseFil, the best-value 180-day supply" width="1024" height="1024" loading="lazy" decoding="async">
-  </figure>
-
   <div class="packs">
     <div class="pack pack-best">
       <span class="pack-badge">Best Value</span>
+      <img class="pack-img" src="imagens/product-6bottles.png" alt="Six bottles of HorseFil" width="1024" height="1024" loading="lazy" decoding="async">
       <span class="pack-tag">What I chose</span>
       <div class="pack-name">6 Bottles</div>
       <div class="pack-days">180-day supply</div>
@@ -384,6 +383,7 @@
       <a class="cta cta-small" data-area="pack6" href="https://www.knownwalk.com/2JCZKZ1X/2452D9JD/">Select This Supply &raquo;</a>
     </div>
     <div class="pack">
+      <img class="pack-img" src="imagens/product-3bottles.png" alt="Three bottles of HorseFil" width="1024" height="1024" loading="lazy" decoding="async">
       <span class="pack-tag">Good Value</span>
       <div class="pack-name">3 Bottles</div>
       <div class="pack-days">90-day supply</div>
@@ -394,6 +394,7 @@
       <a class="cta cta-small" data-area="pack3" href="https://www.knownwalk.com/2JCZKZ1X/2452D9JD/">Select This Supply &raquo;</a>
     </div>
     <div class="pack">
+      <img class="pack-img" src="imagens/product-2bottles.png" alt="Two bottles of HorseFil" width="1024" height="1024" loading="lazy" decoding="async">
       <span class="pack-tag">Try It</span>
       <div class="pack-name">2 Bottles</div>
       <div class="pack-days">60-day supply</div>
